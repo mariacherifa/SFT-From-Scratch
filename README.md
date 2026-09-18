@@ -1,10 +1,12 @@
 # SFT From Scratch 
 
-This project builds directly on my previous repository MiniGPT, where I implemented a decoder-only Transformer language model from scratch and trained it for next-token prediction on the Tiny Shakespeare dataset.
+This repository implements **Supervised Fine-Tuning (SFT) from scratch** on top of a pretrained decoder-only Transformer language model.
 
-The objective of this repository is not to build a new architecture, but to understand how a pretrained language model is transformed into an instruction-following assistant.
+It builds directly on my previous **MiniGPT** project, where I implemented a small GPT-style Transformer from scratch in PyTorch and pretrained it with causal next-token prediction on the TinyStories dataset.
 
-Instead of training on raw text, the model is fine-tuned on instruction-response pairs using the Supervised Fine-Tuning (SFT) objective.
+The goal of this repository is not to build a larger language model or introduce a new Transformer architecture.
+
+Instead, the objective is to understand, at implementation level, how a pretrained language model is transformed into an **instruction-following model**.
 
 # From MiniGPT to Supervised Fine-Tuning
 
@@ -45,6 +47,12 @@ The instruction is therefore used to condition the model's predictions, but it d
 
 This response-only masked loss is the key difference between standard language-model pretraining and supervised fine-tuning. It allows a pretrained language model to transition from predicting arbitrary text to learning how to follow user instructions.
 
+# Pretrained Model Initialization
+SFT does not train a new Transformer from random initialization.
+
+The MiniGPT architecture is instantiated exactly as during pretraining, and all pretrained parameters are restored from the saved checkpoint. SFT then continues optimizing these pretrained parameters on instruction-response data.
+
+
 # Code Walkthrough
 
 This repository implements the complete **Supervised Fine-Tuning (SFT)** pipeline from scratch. The Transformer architecture is exactly the same as in the previous **MiniGPT** project. The main difference lies in how the training data is prepared and how the training loss is computed.
@@ -61,9 +69,10 @@ Each example is stored as a JSON object:
 
 ```json
 {
-    "instruction": "Translate hello to French.",
-    "response": "Bonjour."
-}
+    "instruction": "What is 1 + 2?",
+    "input": "",
+    "output": "3."
+  }
 ```
 
 This dataset represents the desired behavior that we want the language model to learn.
@@ -78,17 +87,17 @@ For example,
 
 ```text
 Instruction:
-Translate hello to French.
+"What is 1 + 2 ?"
 
 Response:
-Bonjour.
+"3".
 ```
 
 During inference, only the instruction is provided:
 
 ```text
 Instruction:
-Translate hello to French.
+"What is 1 + 2 ?".
 
 Response:
 ```
@@ -97,29 +106,19 @@ and the model generates the response autoregressively.
 
 ---
 
-## 3. Vocabulary Construction and Tokenization
+## 3. Tokenizer reuse
 
-As in the MiniGPT project, we first build a character-level vocabulary from the complete SFT corpus.
+An important detail is that SFT must use the same vocabulary and token IDs as pretraining.
 
-The tokenizer provides three utilities:
+The tokenizer mappings are therefore loaded directly from the pretrained checkpoint. 
 
-- vocabulary construction
-- text encoding
-- text decoding
+A new vocabulary is not constructed from the SFT dataset.
 
-allowing us to convert raw text into integer token IDs and reconstruct the original text after generation.
+This is necessary because each row of the pretrained embedding matrix already corresponds to a specific token ID.
 
----
+Changing the token-to-ID mapping would destroy the semantic alignment between the tokenizer and the pretrained embedding weights.
 
-## 4. Building the SFT Dataset
-
-The dataset is implemented as a custom `torch.utils.data.Dataset`. For every instruction-response pair, we construct:
-
-- the input sequence (`x`)
-- the shifted target sequence (`y`)
-- a **response-only loss mask**
-
-This dataset is then wrapped inside PyTorch `DataLoader`s for mini-batch training.
+The project currently uses a character-level tokenizer, inherited from MiniGPT.
 
 ---
 
@@ -204,23 +203,72 @@ Response:
 
 the model predicts the response autoregressively until the answer is complete.
 
+# Why Use a Small Controlled Dataset?
+
+A major lesson from this project is that SFT quality depends strongly on the capability of the pretrained model.
+
+MiniGPT is intentionally tiny:
+
+- character-level tokenization
+- small embedding dimension
+- few Transformer layers
+- short context window
+- lightweight pretraining
+
+It should therefore not be expected to behave like a modern instruction-tuned LLM.
+
+Using large instruction datasets such as Alpaca introduces tasks that are far beyond the capacity and context length of this model.
+
+For this reason, the final SFT experiment uses a smaller and more structured dataset.
+
+The goal is to demonstrate:
+
+pretrained language model
+        ↓
+instruction-conditioned training
+        ↓
+response masking
+        ↓
+supervised fine-tuning
+        ↓
+instruction-conditioned generation
+
+rather than maximize benchmark performance.
+
 # Repository Structure
 
 ```text
-SFT-From-Scratch/
-├── instruction_response.json   # Instruction-response dataset used for supervised fine-tuning
-├── tokenizer.py                # Vocabulary construction, encoding and decoding utilities
-├── prompt_formatting.py        # Converts instruction-response pairs into training prompts
-├── sft_dataset.py              # Builds the SFT dataset
-├── model.py                    # MiniGPT architecture with masked cross-entropy for supervised fine-tuning
-├── sft_train.py                # Training loop, validation loop and loss estimation
-└── main_script.py              # Main script for training and text generation
+SFT_from_GPT/
+│
+├── dataset_SFT.json
+│   └── Short instruction-response dataset
+│
+├── tokenizer.py
+│   └── Loads pretrained vocabulary and provides encode/decode utilities
+│
+├── prepare_data.py
+│   └── Loads and formats instruction-response examples
+│
+├── sftdataset.py
+│   └── Builds x, y and response-only loss masks
+│
+├── model.py
+│   └── MiniGPT Transformer + masked SFT loss
+│
+├── SFT_train.py
+│   └── Training, validation and early stopping
+│
+├── main_script.py
+│   └── Loads pretrained checkpoint, fine-tunes and evaluates MiniGPT
+│
+└── minigpt_pretrained_params.pt
+    └── Pretrained MiniGPT checkpoint
 ```
 
 Before running the project, simply update the path to the instruction dataset in `main_script.py`:
 
 ```python
-file_location = "path/to/instruction_response.json"
+file_location = "path/to/dataset_SFT.json.json"
 ```
 
 Then run the entire training pipeline with:
