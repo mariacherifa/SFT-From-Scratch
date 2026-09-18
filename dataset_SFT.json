@@ -1,0 +1,1002 @@
+[
+  {
+    "instruction": "What is 1 + 1?",
+    "input": "",
+    "output": "2."
+  },
+  {
+    "instruction": "What is 1 + 2?",
+    "input": "",
+    "output": "3."
+  },
+  {
+    "instruction": "What is 1 + 3?",
+    "input": "",
+    "output": "4."
+  },
+  {
+    "instruction": "What is 1 + 4?",
+    "input": "",
+    "output": "5."
+  },
+  {
+    "instruction": "What is 1 + 5?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 2 + 1?",
+    "input": "",
+    "output": "3."
+  },
+  {
+    "instruction": "What is 2 + 2?",
+    "input": "",
+    "output": "4."
+  },
+  {
+    "instruction": "What is 2 + 3?",
+    "input": "",
+    "output": "5."
+  },
+  {
+    "instruction": "What is 2 + 4?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 2 + 5?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 3 + 1?",
+    "input": "",
+    "output": "4."
+  },
+  {
+    "instruction": "What is 3 + 2?",
+    "input": "",
+    "output": "5."
+  },
+  {
+    "instruction": "What is 3 + 3?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 3 + 4?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 3 + 5?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 4 + 1?",
+    "input": "",
+    "output": "5."
+  },
+  {
+    "instruction": "What is 4 + 2?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 4 + 3?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 4 + 4?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 4 + 5?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 5 + 1?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 5 + 2?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 5 + 3?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 5 + 4?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 5 + 5?",
+    "input": "",
+    "output": "10."
+  },
+  {
+    "instruction": "What is 6 + 1?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 6 + 2?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 6 + 3?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 6 + 4?",
+    "input": "",
+    "output": "10."
+  },
+  {
+    "instruction": "What is 6 + 5?",
+    "input": "",
+    "output": "11."
+  },
+  {
+    "instruction": "What is 7 + 1?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 7 + 2?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 7 + 3?",
+    "input": "",
+    "output": "10."
+  },
+  {
+    "instruction": "What is 7 + 4?",
+    "input": "",
+    "output": "11."
+  },
+  {
+    "instruction": "What is 7 + 5?",
+    "input": "",
+    "output": "12."
+  },
+  {
+    "instruction": "What is 8 + 1?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 8 + 2?",
+    "input": "",
+    "output": "10."
+  },
+  {
+    "instruction": "What is 8 + 3?",
+    "input": "",
+    "output": "11."
+  },
+  {
+    "instruction": "What is 8 + 4?",
+    "input": "",
+    "output": "12."
+  },
+  {
+    "instruction": "What is 8 + 5?",
+    "input": "",
+    "output": "13."
+  },
+  {
+    "instruction": "What is 5 - 1?",
+    "input": "",
+    "output": "4."
+  },
+  {
+    "instruction": "What is 5 - 2?",
+    "input": "",
+    "output": "3."
+  },
+  {
+    "instruction": "What is 5 - 3?",
+    "input": "",
+    "output": "2."
+  },
+  {
+    "instruction": "What is 5 - 4?",
+    "input": "",
+    "output": "1."
+  },
+  {
+    "instruction": "What is 6 - 1?",
+    "input": "",
+    "output": "5."
+  },
+  {
+    "instruction": "What is 6 - 2?",
+    "input": "",
+    "output": "4."
+  },
+  {
+    "instruction": "What is 6 - 3?",
+    "input": "",
+    "output": "3."
+  },
+  {
+    "instruction": "What is 6 - 4?",
+    "input": "",
+    "output": "2."
+  },
+  {
+    "instruction": "What is 7 - 1?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 7 - 2?",
+    "input": "",
+    "output": "5."
+  },
+  {
+    "instruction": "What is 7 - 3?",
+    "input": "",
+    "output": "4."
+  },
+  {
+    "instruction": "What is 7 - 4?",
+    "input": "",
+    "output": "3."
+  },
+  {
+    "instruction": "What is 8 - 1?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 8 - 2?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 8 - 3?",
+    "input": "",
+    "output": "5."
+  },
+  {
+    "instruction": "What is 8 - 4?",
+    "input": "",
+    "output": "4."
+  },
+  {
+    "instruction": "What is 9 - 1?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 9 - 2?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 9 - 3?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 9 - 4?",
+    "input": "",
+    "output": "5."
+  },
+  {
+    "instruction": "What is 10 - 1?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 10 - 2?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 10 - 3?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 10 - 4?",
+    "input": "",
+    "output": "6."
+  },
+  {
+    "instruction": "What is 11 - 1?",
+    "input": "",
+    "output": "10."
+  },
+  {
+    "instruction": "What is 11 - 2?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 11 - 3?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 11 - 4?",
+    "input": "",
+    "output": "7."
+  },
+  {
+    "instruction": "What is 12 - 1?",
+    "input": "",
+    "output": "11."
+  },
+  {
+    "instruction": "What is 12 - 2?",
+    "input": "",
+    "output": "10."
+  },
+  {
+    "instruction": "What is 12 - 3?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 12 - 4?",
+    "input": "",
+    "output": "8."
+  },
+  {
+    "instruction": "What is 13 - 1?",
+    "input": "",
+    "output": "12."
+  },
+  {
+    "instruction": "What is 13 - 2?",
+    "input": "",
+    "output": "11."
+  },
+  {
+    "instruction": "What is 13 - 3?",
+    "input": "",
+    "output": "10."
+  },
+  {
+    "instruction": "What is 13 - 4?",
+    "input": "",
+    "output": "9."
+  },
+  {
+    "instruction": "What is 14 - 1?",
+    "input": "",
+    "output": "13."
+  },
+  {
+    "instruction": "What is 14 - 2?",
+    "input": "",
+    "output": "12."
+  },
+  {
+    "instruction": "What is 14 - 3?",
+    "input": "",
+    "output": "11."
+  },
+  {
+    "instruction": "What is 14 - 4?",
+    "input": "",
+    "output": "10."
+  },
+  {
+    "instruction": "Is 1 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 2 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 3 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 4 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 5 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 6 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 7 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 8 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 9 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 10 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 11 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 12 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 13 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 14 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 15 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 16 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 17 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 18 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 19 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 20 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 21 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 22 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 23 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 24 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 25 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 26 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 27 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 28 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is 29 even?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 30 even?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is water a liquid?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is ice cold?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is fire hot?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is snow white?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is grass green?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is the sky blue?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is a cat an animal?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is a dog an animal?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is a bird an animal?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is Paris in France?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is Rome in Italy?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is Berlin in Germany?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is Madrid in Spain?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is Tokyo in Japan?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is Ottawa in Canada?",
+    "input": "",
+    "output": "Yes."
+  },
+  {
+    "instruction": "Is ice hot?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is fire cold?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is snow black?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is grass blue?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is water dry?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is a cat a bird?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is a dog a fish?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is Paris in Italy?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is Rome in France?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is Berlin in Spain?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is Madrid in Germany?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is Tokyo in Canada?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 2 greater than 9?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 3 greater than 8?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Is 20 smaller than 5?",
+    "input": "",
+    "output": "No."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "cat",
+    "output": "CAT."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "dog",
+    "output": "DOG."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "book",
+    "output": "BOOK."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "tree",
+    "output": "TREE."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "apple",
+    "output": "APPLE."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "house",
+    "output": "HOUSE."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "water",
+    "output": "WATER."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "green",
+    "output": "GREEN."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "blue",
+    "output": "BLUE."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "small",
+    "output": "SMALL."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "large",
+    "output": "LARGE."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "hello",
+    "output": "HELLO."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "world",
+    "output": "WORLD."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "paris",
+    "output": "PARIS."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "rome",
+    "output": "ROME."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "car",
+    "output": "CAR."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "door",
+    "output": "DOOR."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "table",
+    "output": "TABLE."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "moon",
+    "output": "MOON."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "sun",
+    "output": "SUN."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "milk",
+    "output": "MILK."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "bread",
+    "output": "BREAD."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "school",
+    "output": "SCHOOL."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "friend",
+    "output": "FRIEND."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "bird",
+    "output": "BIRD."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "flower",
+    "output": "FLOWER."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "coffee",
+    "output": "COFFEE."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "street",
+    "output": "STREET."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "city",
+    "output": "CITY."
+  },
+  {
+    "instruction": "Uppercase this.",
+    "input": "summer",
+    "output": "SUMMER."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "CAT",
+    "output": "cat."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "DOG",
+    "output": "dog."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "BOOK",
+    "output": "book."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "TREE",
+    "output": "tree."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "APPLE",
+    "output": "apple."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "HOUSE",
+    "output": "house."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "WATER",
+    "output": "water."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "GREEN",
+    "output": "green."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "BLUE",
+    "output": "blue."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "SMALL",
+    "output": "small."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "LARGE",
+    "output": "large."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "HELLO",
+    "output": "hello."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "WORLD",
+    "output": "world."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "PARIS",
+    "output": "paris."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "ROME",
+    "output": "rome."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "CAR",
+    "output": "car."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "DOOR",
+    "output": "door."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "TABLE",
+    "output": "table."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "MOON",
+    "output": "moon."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "SUN",
+    "output": "sun."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "MILK",
+    "output": "milk."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "BREAD",
+    "output": "bread."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "SCHOOL",
+    "output": "school."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "FRIEND",
+    "output": "friend."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "BIRD",
+    "output": "bird."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "FLOWER",
+    "output": "flower."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "COFFEE",
+    "output": "coffee."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "STREET",
+    "output": "street."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "CITY",
+    "output": "city."
+  },
+  {
+    "instruction": "Lowercase this.",
+    "input": "SUMMER",
+    "output": "summer."
+  }
+]
